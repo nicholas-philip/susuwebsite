@@ -16,8 +16,6 @@
 
 
 
-
-
 // Listen for form submission
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent form from submitting normally

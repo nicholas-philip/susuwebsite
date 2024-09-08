@@ -25,3 +25,41 @@ hamburger.addEventListener('click', () => {
 //     themeIcon.classList.replace('bx-sun', 'bx-moon');
 //   }
 // });
+
+
+  
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Get the dropdown toggle link and menu
+//   const dropdownToggle = document.getElementById("dropdownToggle");
+//   const dropdownMenu = document.getElementById("dropdownMenu");
+
+//   // Add click event listener to the dropdown toggle
+//   dropdownToggle.addEventListener("click", function(event) {
+//     // Prevent default anchor behavior
+//     event.preventDefault();
+
+//     // Toggle the hidden class on the dropdown menu
+//     dropdownMenu.classList.toggle("hidden");
+//   });
+
+//   // Close the dropdown if clicked outside
+//   document.addEventListener("click", function(event) {
+//     if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+//       dropdownMenu.classList.add("hidden");
+//     }
+//   });
+// });
+
+
+
+const swiper1 = new Swiper(".slider-1", {
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+});
